@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./cs/style.css" />
+  </head>
+  <body>
+<div id="container">
+<div class="text">Наведи на сердце</div>
+
+<div class="wrapper"><svg class="heart-icon icon" viewBox="0 0 512 512">
+  <g><rect width="512" height="512" /></g>
+</svg>
+
+<?xml version="1.0" standalone="no"?>
+ <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+ <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <defs>
+     <clipPath id="heart-path">
+       <path fill-rule="evenodd" clip-rule="evenodd" d="M256,512c0,0-256-144.938-256-311.694C0,29.22,240.62,10.145,256,192 c18.467-181.721,256-162.784,256,8.306C512,367.062,256,512,256,512z"/>
+     </clipPath> 
+      
+      <filter id='inset-shadow'>
+
+    <feOffset
+      dx='0'
+      dy='0'
+    />
+
+    <feGaussianBlur
+      stdDeviation='80'
+      result='offset-blur'
+    />
+
+    <feComposite
+      operator='out'
+      in='SourceGraphic'
+      in2='offset-blur'
+      result='inverse'
+    />
+
+    <feFlood
+      flood-color='black'
+      flood-opacity='.8'
+      result='color'
+    />
+
+    <feComposite
+      operator='in'
+      in='color'
+      in2='inverse'
+      result='shadow'
+    />
+
+    <feComposite
+      operator='over'
+      in='shadow'
+      in2='SourceGraphic'
+    />
+    </filter>
+   </defs>
+ </svg>
+</div>
+</div>
+<script src="./j/modal.js"></script>
+  </body>
+</html>
