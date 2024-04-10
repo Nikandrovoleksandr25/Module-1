@@ -18,7 +18,7 @@
     margin-right: 400px;
 
     }
-@keyframes rotate {
+@keyframes rotateY{
     100% {
         transform: rotateY(360deg);
     }
