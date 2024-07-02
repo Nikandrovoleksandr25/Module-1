@@ -1,0 +1,20 @@
+.dashka {
+font-family: Source Sans 3;
+    font-size: 50px;
+    text-transform: uppercase;
+    
+    display: table;
+  
+    background-color: linear-gradient(to right,
+        red,
+        blue,
+        );
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.dasha {
+    width: max-content;
+    height: max-content;
+    background: #fff;
+    border-radius: 50px;
+}
