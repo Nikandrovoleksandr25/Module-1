@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Шапка сайту -->
+    <header>
+      <div class="container header-container">
+        <a class="logo" href="">Car<span class="span-color">Servise</span> </a>
+        <nav class="navigation">
+          <ul class="list-information">
+            <li class="navigation-item">
+              <a class="navigation-link-index" href="index.html">Головна</a>
+            </li>
+          
+          </ul>
+        </nav>
+        <ul class="header-group-list">
+          <li class="group-link">
+            <a
+              class="header-link-list"
+              href="mailto:info@devstudio.com"
+              target="_blank"
+              rel="noopener no-referrer"
+              aria-label="іконка mail"
+            >
+              <svg class="header-icon" width="16" height="12">
+                <use href="./image/sprite.svg#icon-email"></use>
+              </svg>
+              autoservise@gmail.com
+            </a>
+          </li>
+          <li class="group-link">
+            <a
+              class="header-link-list"
+              href="tel:+380961111111"
+              target="_blank"
+              rel="noopener no-referrer"
+              aria-label="іконка phone"
+            >
+              <svg class="header-icon" width="10" height="16">
+                <use href="./image/sprite.svg#icon-smartphone"></use>
+              </svg>
+              +38 (096) 111-11-11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <!-- Hero-group -->
+      <section class="header-group">
+        <div class="container">
+          <h1 class="hero-title" lang="uk">
+            Обслуговування, чипування та ремонт автомобілів будь-якого рівня
+            складності
+          </h1>
+          
+ <style>
+        /* Стили для модального окна */
+        .modal {
+            display: none; /* По умолчанию модальное окно скрыто */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover, .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        input[type="text"], input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- Кнопка для открытия модального окна -->
+    <button class="btn" id="openModal">Замовити послугу</button>
+
+    <!-- Модальное окно -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Заполните форму</h2>
+            <form>
+                <label for="firstName">Имя:</label>
+                <input type="text" id="firstName" name="firstName" required><br><br>
+
+                <label for="lastName">Фамилия:</label>
+                <input type="text" id="lastName" name="lastName" required><br><br>
+
+                <label for="phone">Номер телефона:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
+
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Получаем элементы
+        const modal = document.getElementById("myModal");
+        const btn = document.getElementById("openModal");
+        const span = document.getElementsByClassName("close")[0];
+
+        // Открытие модального окна при нажатии на кнопку
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // Закрытие окна при нажатии на крестик
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Закрытие окна при клике вне модального окна
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
+
+        </div>
+      </section>
+      <!-- Occupation -->
+      <section class="about">
+<div class="container">
+  <h2 class="our-occupation">Чим ми займаємося</h2>
+  <ul class="team-about">
+    <li class="image-item">
+      <p class="before-list-item-1" data-sale="Ремонт двигунів та їх чипування">Ремонт двигунів та їх чипування</p>
+      <img class="img" src="./image/generated_image (2) (1) 1.png" alt="Чим ми займаємося"  width="370"
+                height="340">
+    </li>
+    <li class="image-item">
+      <p class="before-list-item-2" data-sale="Ремонт ходової">Ремонт ходової</p>
+      <img class="img" src="./image/photo_2024-09-26_21-09-18 1.png" alt="Чим ми займаємося"  width="370"
+                height="340">
+    </li>
+    <li class="image-item">
+      <p class="before-list-item-3" data-sale="Шиномонтаж">Шиномонтаж</p>
+      <img class="img" src="./image/Group 1.png" alt="Чим ми займаємося"  width="370"
+                height="340">
+    </li>
+  </ul>
+</div>
+      </section>
+      <!-- our team -->
+      <section class="our-team">
+        <div class="container container-team">
+          <h2 class="team">Наша команда</h2>
+          <ul class="it-team">
+            <li class="group member-group">
+              <img
+                class="it-group"
+                src="./image/img1.png"
+                alt="Наша команда "
+                width="270"
+                height="260"
+              />
+              <div class="member-groups">
+                <h3 class="name">Ігор Дем'яненко</h3>
+                <p class="specialization">Майстер ремонтування двигунів</p>
+                <ul class="team-social-link-list">
+                  <li class="team-social-link-item">
+                    <a
+                      class="our-team-icons"
+                      href=""
+                      target="_blank"
+                      rel="noopener-noreferrer"
+                      aria-label="іконка instagram"
+                    >
+                      <svg class="member-icons" width="20">
+                        <use href="./image/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-social-link-item">
+                    <a
+                      class="our-team-icons"
+                      href=""
+                      target="_blank"
+                      rel="noopener-noreferrer"
+                      aria-label="іконка twitter"
+                    >
+                      <svg class="member-icons" width="20">
+                        <use href="./image/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-social-link-item">
+                    <a
+                      class="our-team-icons"
+                      href=""
+                      target="_blank"
+                      rel="noopener-noreferrer"
+                      aria-label="іконка facebook"
+                    >
+                      <svg class="member-icons" width="20">
+                        <use href="./image/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-social-link-item">
+                    <a
+                      class="our-team-icons"
+                      href=""
+                      target="_blank"
+                      rel="noopener-noreferrer"
+                      aria-label="іконка linkedid"
+                    >
+                      <svg class="member-icons" width="20">
+                        <use href="./image/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="group member-group">
+              <img
+                class="it-group"
+                src="./image/img2.png"
+                alt="Наша команда "
+                width="270"
+                height="260"
+              />
+              <div class="member-groups">
+                <h3 class="name">Микола Тарасов</h3>
+                <p class="specialization">Майстер ремонтування ходової</p>
+                <ul class="team-social-link-list">
+                  <li class="team-social-link-item">
+                    <a
+                      class="our-team-icons"
+                      href=""
+                      target="_blank"
+                      rel="noopener-noreferrer"
+                      aria-label="іконка instagram"
+                    >
+                      <svg class="member-icons" width="20">
+                        <use href="./image/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-social-link-item">
+                    <a
+                      class="our-team-icons"
+                      href=""
+                      target="_blank"
+                      rel="noopener-noreferrer"
+                      aria-label="іконка twitter"
+                    >
+                      <svg class="member-icons" width="20">
+                        <use href="./image/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-social-link-item">
+                    <a
+                      class="our-team-icons"
+                      href=""
+                      target="_blank"
+                      rel="noopener-noreferrer"
+                      aria-label="іконка facebook"
+                    >
+                      <svg class="member-icons" width="20">
+                        <use href="./image/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-social-link-item">
+                    <a
+                      class="our-team-icons"
+                      href=""
+                      target="_blank"
+                      rel="noopener-noreferrer"
+                      aria-label="іконка linkedid"
+                    >
+                      <svg class="member-icons" width="20">
+                        <use href="./image/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="group member-group">
+              <img
+                class="it-group"
+                src="./image/img3.jpg"
+                alt="Наша команда "
+                width="270"
+                height="260"
+              />
+              <div class="member-groups">
+                <h3 class="name">Михайло Єрмаков</h3>
+                <p class="specialization">Майстер чипування двигунів</p>
+                <ul class="team-social-link-list">
+                  <li class="team-social-link-item">
+                    <a
+                      class="our-team-icons"
+                      href=""
+                      target="_blank"
+                      rel="noopener-noreferrer"
+                      aria-label="іконка instagram"
+                    >
+                      <svg class="member-icons" width="20">
+                        <use href="./image/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-social-link-item">
+                    <a
+                      class="our-team-icons"
+                      href=""
+                      target="_blank"
+                      rel="noopener-noreferrer"
+                      aria-label="іконка twitter"
+                    >
+                      <svg class="member-icons" width="20">
+                        <use href="./image/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-social-link-item">
+                    <a
+                      class="our-team-icons"
+                      href=""
+                      target="_blank"
+                      rel="noopener-noreferrer"
+                      aria-label="іконка facebook"
+                    >
+                      <svg class="member-icons" width="20">
+                        <use href="./image/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-social-link-item">
+                    <a
+                      class="our-team-icons"
+                      href=""
+                      target="_blank"
+                      rel="noopener-noreferrer"
+                      aria-label="іконка linkedid"
+                    >
+                      <svg class="member-icons" width="20">
+                        <use href="./image/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="group member-group">
+              <img
+                class="it-group"
+                src="./image/image4.png"
+                alt="Наша команда "
+                width="270"
+                height="260"
+              />
+              <div class="member-groups">
+                <h3 class="name">Олексій Абрамович</h3>
+                <p class="specialization">Майстер шиномонтажу</p>
+                <ul class="team-social-link-list">
+                  <li class="team-social-link-item">
+                    <a
+                      class="our-team-icons"
+                      href=""
+                      target="_blank"
+                      rel="noopener-noreferrer"
+                      aria-label="іконка instagram"
+                    >
+                      <svg class="member-icons" width="20">
+                        <use href="./image/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-social-link-item">
+                    <a
+                      class="our-team-icons"
+                      href=""
+                      target="_blank"
+                      rel="noopener-noreferrer"
+                      aria-label="іконка twitter"
+                    >
+                      <svg class="member-icons" width="20">
+                        <use href="./image/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-social-link-item">
+                    <a
+                      class="our-team-icons"
+                      href=""
+                      target="_blank"
+                      rel="noopener-noreferrer"
+                      aria-label="іконка facebook"
+                    >
+                      <svg class="member-icons" width="20">
+                        <use href="./image/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-social-link-item">
+                    <a
+                      class="our-team-icons"
+                      href=""
+                      target="_blank"
+                      rel="noopener-noreferrer"
+                      aria-label="іконка linkedid"
+                    >
+                      <svg class="member-icons" width="20">
+                        <use href="./image/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-cotainer">
+        <div class="information-footer">
+          <a class="logo-footer" href="WebStudio"
+            >Web<span class="span">Studio</span></a
+          >
+          <address class="address">
+            <p class="street-address">м.Харків,пр-т Героїв Харкова,26</p>
+            <ul class="list">
+              <li class="item">
+                <a class="information-email" href="mailto:info@devstudio.com"
+                  >autoservise@gmail.com</a
+                >
+              </li>
+              <li class="item">
+                <a class="information-telephone" href="tel:380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="social">
+          <p class="join-in">приєднуйтесь</p>
+          <ul class="social-network">
+            <li class="social-links">
+              <a
+                class="social-icons"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label=""
+              >
+                <svg class="footer-icons" width="20" height="20">
+                  <use href="./image/sprite.svg#instagram-footer"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links">
+              <a
+                class="social-icons"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label=""
+              >
+                <svg class="footer-icons" width="20" height="20">
+                  <use href="./image/sprite.svg#twitter-footer"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links">
+              <a
+                class="social-icons"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label=""
+              >
+                <svg class="footer-icons" width="20" height="20">
+                  <use href="./image/sprite.svg#facebook-footer"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links">
+              <a
+                class="social-icons"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label=""
+              >
+                <svg class="footer-icons" width="20" height="20">
+                  <use href="./image/sprite.svg#linkedin-footer"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscribe-content">
+          <p class="text-subscribe">Підпишіться на розсилку</p>
+          <label>
+            <input
+              class="input-footer-emai"
+              type="E-mail"
+              name="E-mail"
+              placeholder="E-mail"
+            />
+          </label>
+          <button class="btn-footer" type="button">
+            <p class="subscribe">Підписатися</p>
+
+            <svg class="icon-telegram-footer" width="24px" height="24px">
+              <use href="./image/sprite.svg#icon-telegram"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </footer>
+    
+    
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
